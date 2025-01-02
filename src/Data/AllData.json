@@ -1,0 +1,94 @@
+{
+    "ProductData": [
+        {
+            "id": 1,
+            "name": "Sofa",
+            "price": "INR 1000",
+            "image": "http://pluspng.com/img-png/couch-hd-png-sofa-1400.png"
+        },
+        {
+            "id": 2,
+            "name": "Chair",
+            "price": "INR 800",
+            "image": "https://freepngimg.com/thumb/chair/3-2-chair-transparent.png"
+        },
+        {
+            "id": 3,
+            "name": "Table",
+            "price": "INR 1500",
+            "image": "https://freepngimg.com/thumb/table/18-table-png-image.png"
+        },
+        {
+            "id": 4,
+            "name": "Lamp",
+            "price": "INR 500",
+            "image": "https://www.freeiconspng.com/uploads/lamp-png-31.png"
+        },
+        {
+            "id": 5,
+            "name": "Bed",
+            "price": "INR 3000",
+            "image": "http://pngimg.com/uploads/bed/bed_PNG17401.png"
+        },
+        {
+            "id": 6,
+            "name": "Cushion",
+            "price": "INR 200",
+            "image": "https://static.vecteezy.com/system/resources/previews/022/697/841/non_2x/green-cushion-isolated-on-a-transparent-background-png.png"
+        },
+        {
+            "id": 7,
+            "name": "Shelf",
+            "price": "INR 1200",
+            "image": "https://www.pngall.com/wp-content/uploads/5/Wood-Shelves-PNG-Pic.png"
+        },
+        {
+            "id": 8,
+            "name": "Mirror",
+            "price": "INR 900",
+            "image": "http://clipart-library.com/image_gallery2/Mirror-Free-Download-PNG.png"
+        },
+        {
+            "id": 9,
+            "name": "Cabinet",
+            "price": "INR 2500",
+            "image": "https://freepngimg.com/thumb/aquarium/42830-6-cabinet-free-transparent-image-hd.png"
+        },
+        {
+            "id": 10,
+            "name": "Rug",
+            "price": "INR 700",
+            "image": "https://tse4.mm.bing.net/th?id=OIP.9wZ42CszX5gV75zZ33lWmwHaHa&pid=Api&P=0&h=180"
+        },
+        {
+            "id": 11,
+            "name": "Curtains",
+            "price": "INR 600",
+            "image": "https://tse3.mm.bing.net/th?id=OIP.z3tjkk3zkLzV-Yj9-hwZ_AAAAA&pid=Api&P=0&h=180"
+        },
+        {
+            "id": 12,
+            "name": "Desk",
+            "price": "INR 1700",
+            "image": "http://www.pngmart.com/files/7/Computer-Desk-Transparent-Background.png"
+        },
+        {
+            "id": 13,
+            "name": "Stool",
+            "price": "INR 300",
+            "image": "https://tse1.mm.bing.net/th?id=OIP.h2j-hYkFKRqjT4_QerJvFQHaFd&pid=Api&P=0&h=180"
+        },
+        {
+            "id": 14,
+            "name": "Clock",
+            "price": "INR 400",
+            "image": "https://tse2.mm.bing.net/th?id=OIP.V6F8OI_tzNZS22wUuhi0LAHaHa&pid=Api&P=0&h=180"
+        },
+        {
+            "id": 15,
+            "name": "Painting",
+            "price": "INR 2000",
+            "image": "http://www.pngmart.com/files/7/Abstract-Art-PNG-Transparent-Image.png"
+        }
+    ]
+}
