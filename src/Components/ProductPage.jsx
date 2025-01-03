@@ -35,7 +35,7 @@ const ProductPage = () => {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="w-full lg:w-2/3 bg-white/20 rounded-lg shadow-lg md:backdrop-blur-sm border border-white/30 p-6 ">
+      <div className="w-full lg:w-2/3 bg-white/20 rounded-lg shadow-2xl md:backdrop-blur-sm border border-white/30 p-6 ">
         <h1 className="text-3xl font-bold font-bricolage text-center mb-8">
           Trending Products
         </h1>
