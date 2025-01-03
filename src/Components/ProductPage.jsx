@@ -2,12 +2,34 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { ProductData } from "../Data/AllData.json";
+import slider1 from "../assets/slider1.png";
+import slider2 from "../assets/slider2.png";
+import slider3 from "../assets/slider3.png";
+import { IoCartOutline } from "react-icons/io5";
+import { IoMdHeartEmpty } from "react-icons/io";
+import { AiFillStar } from "react-icons/ai";
 const ProductPage = () => {
+  const images = [
+    { src: slider1, name: "Product 1", price: "$100" },
+    { src: slider2, name: "Product 2", price: "$150" },
+    { src: slider3, name: "Product 3", price: "$200" },
+    { src: slider1, name: "Product 4", price: "$100" },
+    { src: slider2, name: "Product 5", price: "$150" },
+    { src: slider3, name: "Product 6", price: "$200" },
+    { src: slider1, name: "Product 7", price: "$100" },
+    { src: slider2, name: "Product 8", price: "$150" },
+    { src: slider3, name: "Product 9", price: "$200" },
+    { src: slider1, name: "Product 10", price: "$100" },
+    { src: slider2, name: "Product 11", price: "$150" },
+    { src: slider3, name: "Product 12", price: "$200" },
+    { src: slider1, name: "Product 13", price: "$100" },
+    { src: slider2, name: "Product 14", price: "$150" },
+    { src: slider3, name: "Product 15", price: "$200" },
+  ];
   const settings = {
     dots: true,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 3,
     slidesToScroll: 3,
     autoplay: true,
@@ -40,43 +62,41 @@ const ProductPage = () => {
           Trending Products
         </h1>
         <Slider {...settings}>
-          {ProductData.map((items , id) => (
-            <div className="px-4" key={id}>
-              <div className="bg-[linear-gradient(462deg,_#fdf2e3_51%,_#ffd39c_70%)] text-black rounded-lg shadow-md p-6 flex flex-col items-center justify-center text-center h-72">
+          {images.map((image, index) => (
+            <>
+              <div
+                key={index}
+                className="p-[5px] overflow-hidden w-full mx-auto cursor-pointer rounded-xl relative group"
+              >
+                {/* Image */}
                 <img
-                  src={items.image}
-                  alt={items.name}
-                  className="mb-4 w-32 h-32"
+                  src={image.src}
+                  alt={image.name}
+                  className="h-full w-full mx-auto object-cover rounded-xl hover:scale-105 duration-300 ease-linear"
                 />
-                <p className="text-xl font-semibold">{items.name}</p>
-                <p className="text-lg">{items.price}</p>
-                <button className="bg-red-600 hover:bg-red-800 text-white py-2 px-4 rounded mt-4">
-                  Buy Now
-                </button>
-              </div>
-            </div>
-          ))}
 
-          {/* <div className="px-4">
-                        <div className="bg-blue-500 text-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center text-center h-72">
-                            <img src="https://via.placeholder.com/150" alt="Sofa" className="mb-4" />
-                            <p className="text-xl font-semibold">Sofa</p>
-                            <p className="text-lg">INR 1000</p>
-                            <button className="bg-red-600 hover:bg-red-800 text-white py-2 px-4 rounded mt-4">
-                                Buy Now
-                            </button>
-                        </div>
-                    </div>
-                    <div className="px-4">
-                        <div className="bg-green-500 text-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center text-center h-72">
-                            <img src="https://via.placeholder.com/150" alt="Chair" className="mb-4" />
-                            <p className="text-xl font-semibold">Chair</p>
-                            <p className="text-lg">INR 800</p>
-                            <button className="bg-red-600 hover:bg-red-800 text-white py-2 px-4 rounded mt-4">
-                                Buy Now
-                            </button>
-                        </div>
-                    </div> */}
+                {/* Hover Effects */}
+                <div className="absolute top-2 right-2 flex gap-2"></div>
+                <div className="absolute w-full h-16 text-black bottom-0 left-0 bg-orange-300 opacity-90 transform translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out flex items-center justify-between px-3">
+                  <button className="py-2 font-semibold">Buy Now</button>
+                  <div className="flex gap-2">
+                    <IoCartOutline className="cursor-pointer w-7 h-7" />
+                    <IoMdHeartEmpty className="cursor-pointer w-7 h-7" />
+                  </div>
+                </div>
+
+                {/* Rating (Visible on Hover) */}
+                <div className="absolute top-3 right-3 bg-orange-300  px-2 py-1 rounded-md shadow-md opacity-0 group-hover:opacity-90 transition-opacity duration-300 ease-in-out flex items-center gap-1">
+                  4.5 <AiFillStar />
+                </div>
+              </div>
+              {/* Name and Price */}
+              <div className="text-center mt-2 ">
+                <h3 className="text-lg font-semibold">{image.name}</h3>
+                <p className="text-md text-gray-600">{image.price}</p>
+              </div>
+            </>
+          ))}
         </Slider>
       </div>
     </div>
