@@ -7,7 +7,7 @@ import { IoCartOutline } from "react-icons/io5";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { AiFillStar } from "react-icons/ai";
 
-function MainCarousel() {
+const MainCarousel = () => {
   const images = [
     { src: slider1, name: "Product 1", price: "$100" },
     { src: slider2, name: "Product 2", price: "$150" },
