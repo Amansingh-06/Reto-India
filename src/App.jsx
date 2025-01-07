@@ -3,6 +3,7 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import Router from "./Router/Router";
 import Home from "./Components/Home/Home";
 import CartPage from "./Components/CartPage/CartPage";
+import OrderPage from "./Components/orderSummery/OrderPage";
 
 const App = () => {
   const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const App = () => {
           path: "/cart",
           element: <CartPage />,
         },
+        {
+          path: "/order",
+          element:<OrderPage/>
+        }
       ],
     },
   ]);

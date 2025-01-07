@@ -1,6 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import { useDispatch, useSelector } from "react-redux";
+import { FaArrowLeftLong } from "react-icons/fa6";
+
 import {
   incrementQuantity,
   decrementQuantity,
@@ -52,7 +54,8 @@ const CartPage = () => {
                     onClick={handleContinueShopping}
                     className="text-black  text-sm font-medium md:mb-0 mb-3"
                   >
-                    <p className="background px-4 py-3 rounded-md  border-[1px] border-orange-200 hover:scale-105 duration-100 ease-in">
+                  <p className="background px-4 py-3 rounded-md  border-[1px] border-orange-200 hover:scale-105 duration-100 ease-in">
+                    
                     Continue Shopping
                     </p>
                   </button>
@@ -121,12 +124,13 @@ const CartPage = () => {
                   </tbody>
                 </table>
                 <div className="mt-6 md:flex md:justify-between text-center">
-                  <button
-                    onClick={handleContinueShopping}
-                    className="text-blue-500 hover:underline text-sm font-medium md:mb-0 mb-3"
-                  >
-                    Continue Shopping
-                  </button>
+                   <button
+                                                          onClick={handleContinueShopping}
+                                                          className="text-blue-500 hover:underline text-sm font-medium md:mb-0 mb-3 flex justify-center items-center gap-3"
+                                                          >
+                                                              <FaArrowLeftLong/>
+                                                          Continue Shopping
+                                                      </button>
                   <div className="md:text-right">
                     <h3 className="text-sm font-semibold text-gray-800">
                       Total Items: <span>{totalQuantity}</span>
