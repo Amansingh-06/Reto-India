@@ -71,13 +71,13 @@ const OrderPage = () => {
                                                         <h3 className="text-sm font-medium text-gray-800">
                                                             {item.name}
                                                         </h3>
-                                                       
+
                                                     </div>
                                                 </td>
                                                 <td className="md:px-2 py-2 px-0 text-sm text-gray-700">
-                                                  
+
                                                     <span className="text-sm  border-[1px] border-gray-400 px-3 py-2 text-center">{item.quantity}</span>
-                                                   
+
                                                 </td>
                                                 <td className="p-2 text-sm text-gray-700">
                                                     ${item.price}
@@ -93,11 +93,11 @@ const OrderPage = () => {
                                     <button
                                         onClick={handleContinueShopping}
                                         className="text-blue-500 hover:underline text-sm font-medium md:mb-0 mb-3 flex justify-center items-center gap-3"
-                                        >
-                                            <FaArrowLeftLong/>
+                                    >
+                                        <FaArrowLeftLong />
                                         Continue Shopping
                                     </button>
-                                   
+
                                 </div>
                             </>
                         )}
@@ -121,6 +121,36 @@ const OrderPage = () => {
                                     {totalPrice}
                                 </span>
                             </div>
+                            <div className="flex justify-between items-center mb-2">
+                                <span className="text-sm font-medium text-gray-600">Order number</span>
+                                <span className="text-sm font-medium text-gray-800">
+                                    xxxxxxxxxxxxxxxxxxxx
+                                </span>
+                            </div>
+                            <div className="flex justify-between items-center mb-2">
+                                <span className="text-sm font-medium text-gray-600">Status</span>
+                                <span className="text-sm font-medium text-gray-800">
+                                    Delivered
+                                </span>
+                            </div>
+                            <div className="flex justify-between items-center mb-2">
+                                <span className="text-sm font-medium text-gray-600">Payment method</span>
+                                <span className="text-sm font-medium text-gray-800">
+                                    Cash on delivery
+                                </span>
+                            </div>
+                            <div className="flex justify-between items-center mb-2">
+                                <span className="text-sm font-medium text-gray-600">Date</span>
+                                <span className="text-sm font-medium text-gray-800">
+                                    21 oct 2024,06:18 pm
+                                </span>
+                            </div>
+                            <div className="flex justify-between items-center mb-2 gap-20">
+                                <span className="text-sm font-medium text-gray-600">Shipping Address</span>
+                                <span className="text-sm font-medium text-gray-800 block  max-w-[300px] line-clamp-2">
+                                    247,Narayan Nagar society,bapa sitaram chaowk,simada saniya road,simadacfhgvj cjl
+                                </span>
+                            </div>
                             <div className="flex justify-between items-center">
                                 <span className="text-sm font-medium text-gray-600">
                                     Shipping Charge
@@ -128,7 +158,7 @@ const OrderPage = () => {
                                 <span className="text-sm font-medium text-gray-800">$5.00</span>
                             </div>
                         </div>
-                      
+
                         <div className="border-t pt-4">
                             <div className="flex justify-between items-center">
                                 <span className="text-sm font-medium text-gray-600">
@@ -138,7 +168,7 @@ const OrderPage = () => {
                                     ${(totalPrice + 5).toFixed(2)}
                                 </span>
                             </div>
-                          
+
                         </div>
                     </div>
                 </div>
