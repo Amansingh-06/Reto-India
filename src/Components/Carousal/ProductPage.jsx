@@ -2,7 +2,6 @@ import React from "react";
 import Slider from "react-slick";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../Redux/CartSlice"; // Adjust the import based on your file structure
-
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import slider1 from "../../assets/slider1.png";
@@ -71,10 +70,10 @@ const ProductPage = () => {
 
   return (
     <div className="flex items-center justify-center">
-      <div className="w-full lg:w-2/3 bg-white/20 rounded-lg shadow-2xl md:backdrop-blur-sm border border-white/30 p-6">
-        <h1 className="text-3xl font-bold font-bricolage text-center mb-8">
-          Trending Products
-        </h1>
+      <div className="w-full lg:w-2/3 bg-white/20 rounded-lg shadow-2xl border border-white/30 p-6">
+        <h2 className="text-2xl font-bold font-bricolage text-center mb-8">
+          Our Products
+        </h2>
         <Slider {...settings}>
           {images.map((image , index) => (
             <>
